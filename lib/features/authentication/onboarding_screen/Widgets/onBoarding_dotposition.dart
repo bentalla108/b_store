@@ -1,7 +1,7 @@
+import 'package:b_store/features/authentication/controllers_onboarding/onboarding_screen.dart';
 import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/device/device_utility.dart';
 import 'package:b_store/utils/helpers/helper_functions.dart';
-import 'package:b_store/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -15,12 +15,14 @@ class OnBoardingDotPosition extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = OnBoardingController.instance;
     final dark = BHelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: BDeviceUtils.getBottomNavigationBarHeight() + 25,
       left: BSizes.defaultSpace,
       child: SmoothPageIndicator(
-        controller: PageController(),
+        onDotClicked: controller.dotNavigationClick,
+        controller: controller.pageController,
         count: OnBoardindContent.title.length,
         effect: ExpandingDotsEffect(
           activeDotColor: dark ? BColors.light : BColors.dark,

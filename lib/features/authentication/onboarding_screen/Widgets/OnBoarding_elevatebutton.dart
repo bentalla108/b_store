@@ -1,10 +1,11 @@
+import 'package:b_store/features/authentication/controllers_onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 
-class OnBoardingElevetaButton extends StatelessWidget {
-  const OnBoardingElevetaButton({
+class OnBoardingNextButton extends StatelessWidget {
+  const OnBoardingNextButton({
     super.key,
   });
 
@@ -14,7 +15,7 @@ class OnBoardingElevetaButton extends StatelessWidget {
 
     return Positioned(
         child: ElevatedButton(
-      onPressed: () {},
+      onPressed: OnBoardingController.instance.nextPage,
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
         backgroundColor: dark ? BColors.primary : BColors.dark,
