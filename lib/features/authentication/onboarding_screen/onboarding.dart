@@ -2,7 +2,7 @@ import 'package:b_store/features/authentication/onboarding_screen/Widgets/onboar
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers_onboarding/onboarding_screen.dart';
+import '../controllers_onboarding/onboarding_controller.dart';
 import 'Widgets/onboarding_elevatebutton.dart';
 import 'Widgets/onboarding_dotposition.dart';
 import 'Widgets/onboarding_skip.dart';
@@ -21,12 +21,12 @@ class OnBoardingScreen extends StatelessWidget {
           PageView.builder(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
-            itemCount: OnBoardindContent.title.length,
+            itemCount: OnBoardingContent.title.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (BuildContext context, int index) => OnBoardingPage(
-              title: OnBoardindContent.title[index],
-              image: OnBoardindContent.image[index],
-              subTitle: OnBoardindContent.subTitle[index],
+              title: OnBoardingContent.title[index],
+              image: OnBoardingContent.image[index],
+              subTitle: OnBoardingContent.subTitle[index],
             ),
           ),
 

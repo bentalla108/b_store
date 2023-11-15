@@ -1,4 +1,4 @@
-import 'package:b_store/features/authentication/controllers_onboarding/onboarding_screen.dart';
+import 'package:b_store/features/authentication/controllers_onboarding/onboarding_controller.dart';
 import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/device/device_utility.dart';
 import 'package:b_store/utils/helpers/helper_functions.dart';
@@ -23,7 +23,7 @@ class OnBoardingDotPosition extends StatelessWidget {
       child: SmoothPageIndicator(
         onDotClicked: controller.dotNavigationClick,
         controller: controller.pageController,
-        count: OnBoardindContent.title.length,
+        count: OnBoardingContent.title.length,
         effect: ExpandingDotsEffect(
           activeDotColor: dark ? BColors.light : BColors.dark,
           dotHeight: 6,

@@ -7,6 +7,7 @@ class OnBoardingController extends GetxController {
 
   // Variables
   Rx<int> currentPageindex = 0.obs;
+  final int numberPage = OnBoardingContent.subTitle.length;
   final pageController = PageController();
   // Update Current Index When Page Scroll
   void updatePageIndicator(index) => currentPageindex.value = index;
@@ -19,7 +20,7 @@ class OnBoardingController extends GetxController {
 
   // Update current index et jump to next page.
   void nextPage() {
-    if (currentPageindex.value == OnBoardindContent.subTitle.length - 1) {
+    if (currentPageindex.value == numberPage - 1) {
       // Get.to(LoginScreen());
     } else {
       pageController.jumpTo(currentPageindex.value + 1);
@@ -27,7 +28,9 @@ class OnBoardingController extends GetxController {
   }
 
   void skipPage() {
-    currentPageindex.value = OnBoardindContent.subTitle.length - 1;
-    pageController.jumpTo(OnBoardindContent.subTitle.length - 1);
+    currentPageindex.value = numberPage - 1;
+    print(numberPage);
+    print(numberPage - 1);
+    pageController.jumpTo(numberPage - 1);
   }
 }

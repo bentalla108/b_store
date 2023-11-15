@@ -1,7 +1,7 @@
 import 'package:b_store/utils/constants/image_strings.dart';
 import 'package:b_store/utils/constants/text_strings.dart';
 
-class OnBoardindContent {
+class OnBoardingContent {
   static final List<String> subTitle = [
     BTexts.onBoardingSubTitle1,
     BTexts.onBoardingSubTitle2,
