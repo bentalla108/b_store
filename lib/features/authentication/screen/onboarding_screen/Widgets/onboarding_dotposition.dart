@@ -5,7 +5,7 @@ import 'package:b_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../utils/constants/sizes.dart';
+import '../../../../../utils/constants/sizes.dart';
 import '../contents/onboarding_content.dart';
 
 class OnBoardingDotPosition extends StatelessWidget {

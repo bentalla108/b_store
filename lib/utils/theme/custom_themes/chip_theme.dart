@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
-class TChipTheme {
-  TChipTheme._();
+class BChipTheme {
+  BChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
     disabledColor: BColors.grey.withOpacity(0.4),

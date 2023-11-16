@@ -1,9 +1,9 @@
-import 'package:b_store/features/authentication/onboarding_screen/Widgets/onboarding_custom_page.dart';
+import 'package:b_store/features/authentication/screen/onboarding_screen/Widgets/onboarding_custom_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers_onboarding/onboarding_controller.dart';
-import 'Widgets/onboarding_elevatebutton.dart';
+import '../../controllers_onboarding/onboarding_controller.dart';
+import 'Widgets/onboarding_next_button.dart';
 import 'Widgets/onboarding_dotposition.dart';
 import 'Widgets/onboarding_skip.dart';
 import 'contents/onboarding_content.dart';

@@ -1,4 +1,5 @@
-import 'package:b_store/features/authentication/onboarding_screen/contents/onboarding_content.dart';
+import 'package:b_store/features/authentication/screen/login_screen/login_screen.dart';
+import 'package:b_store/features/authentication/screen/onboarding_screen/contents/onboarding_content.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,22 +16,21 @@ class OnBoardingController extends GetxController {
   //Jump to the specific dot page.
   void dotNavigationClick(index) {
     currentPageindex.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpTo(index + .0);
   }
 
   // Update current index et jump to next page.
   void nextPage() {
     if (currentPageindex.value == numberPage - 1) {
-      // Get.to(LoginScreen());
+      Get.off(() => const LoginScreen());
     } else {
-      pageController.jumpTo(currentPageindex.value + 1);
+      pageController.jumpToPage(currentPageindex.value + 1);
     }
   }
 
   void skipPage() {
     currentPageindex.value = numberPage - 1;
-    print(numberPage);
-    print(numberPage - 1);
-    pageController.jumpTo(numberPage - 1);
+
+    pageController.jumpToPage(numberPage - 1);
   }
 }
