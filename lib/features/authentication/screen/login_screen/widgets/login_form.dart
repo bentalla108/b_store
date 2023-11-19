@@ -1,6 +1,9 @@
+import 'package:b_store/features/authentication/controllers_onboarding/onboarding_controller.dart';
+import 'package:b_store/features/authentication/screen/password_configuration/forgot_password_screen.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class BLoginForm extends StatelessWidget {
@@ -8,14 +11,16 @@ class BLoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
+
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: BSizes.spaceBtwSections),
         child: Column(
           children: [
             /// Email
-            const TextField(
-              decoration: InputDecoration(
+            TextFormField(
+              decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
                   labelText: BTexts.email),
             ),
@@ -24,8 +29,8 @@ class BLoginForm extends StatelessWidget {
             ),
 
             /// Password
-            const TextField(
-              decoration: InputDecoration(
+            TextFormField(
+              decoration: const InputDecoration(
                   suffixIcon: Icon(Iconsax.eye_slash),
                   prefixIcon: Icon(Iconsax.password_check),
                   labelText: BTexts.password),
@@ -52,7 +57,9 @@ class BLoginForm extends StatelessWidget {
 
                 /// Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const ForgotPasswordScreen());
+                  },
                   child: const Text(BTexts.forgetPassword),
                 ),
               ],
@@ -77,7 +84,7 @@ class BLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: controller.gotoSignUpScreen,
                 child: const Text(BTexts.createAccount),
               ),
             ),

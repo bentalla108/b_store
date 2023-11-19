@@ -1,5 +1,6 @@
 import 'package:b_store/features/authentication/screen/login_screen/login_screen.dart';
 import 'package:b_store/features/authentication/screen/onboarding_screen/contents/onboarding_content.dart';
+import 'package:b_store/features/authentication/screen/signup_screen/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -32,5 +33,9 @@ class OnBoardingController extends GetxController {
     currentPageindex.value = numberPage - 1;
 
     pageController.jumpToPage(numberPage - 1);
+  }
+
+  void gotoSignUpScreen() {
+    Get.to(() => const SignUpScreen());
   }
 }
