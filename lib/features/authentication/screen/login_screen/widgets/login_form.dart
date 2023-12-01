@@ -1,5 +1,6 @@
 import 'package:b_store/features/authentication/controllers_onboarding/onboarding_controller.dart';
 import 'package:b_store/features/authentication/screen/password_configuration/forgot_password_screen.dart';
+import 'package:b_store/navigation_menu.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -72,7 +73,7 @@ class BLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(BTexts.signIn),
               ),
             ),
