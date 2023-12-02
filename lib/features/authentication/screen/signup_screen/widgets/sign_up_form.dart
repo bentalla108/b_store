@@ -1,4 +1,4 @@
-import 'package:b_store/commons/widgets/custom_field_text.dart';
+import 'package:b_store/commons/widgets/custom_textfield/custom_field_text.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

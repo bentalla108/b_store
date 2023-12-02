@@ -1,4 +1,4 @@
-import 'package:b_store/commons/success_screen/success_screen.dart';
+import 'package:b_store/commons/widgets/success_screen/success_screen.dart';
 import 'package:b_store/features/authentication/screen/login_screen/login_screen.dart';
 import 'package:b_store/utils/constants/image_strings.dart';
 import 'package:b_store/utils/constants/sizes.dart';

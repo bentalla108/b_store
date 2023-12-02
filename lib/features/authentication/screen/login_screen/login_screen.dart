@@ -1,5 +1,5 @@
-import 'package:b_store/commons/login_signup_widgets/form_divider.dart';
-import 'package:b_store/commons/login_signup_widgets/social_buttons.dart';
+import 'package:b_store/commons/widgets/login_signup_widgets/form_divider.dart';
+import 'package:b_store/commons/widgets/login_signup_widgets/social_buttons.dart';
 import 'package:b_store/commons/styles/spacing_styles.dart';
 import 'package:b_store/features/authentication/screen/login_screen/widgets/login_form.dart';
 import 'package:b_store/features/authentication/screen/login_screen/widgets/login_header.dart';

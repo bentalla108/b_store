@@ -1,4 +1,4 @@
-import 'package:b_store/commons/widgets/custom_field_text.dart';
+import 'package:b_store/commons/widgets/custom_textfield/custom_field_text.dart';
 import 'package:b_store/features/authentication/screen/login_screen/login_screen.dart';
 import 'package:b_store/features/authentication/screen/password_configuration/reset_password_screen.dart';
 import 'package:b_store/utils/constants/sizes.dart';
