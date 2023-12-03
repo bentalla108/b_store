@@ -1,4 +1,4 @@
-import 'package:b_store/commons/widgets/custom_shapes/container/circular_container.dart';
+import 'package:b_store/commons/widgets/container/circular_container.dart';
 import 'package:b_store/commons/widgets/custom_shapes/curved_edges/curved_edge_widget.dart';
 import 'package:b_store/utils/constants/colors.dart';
 import 'package:flutter/material.dart';

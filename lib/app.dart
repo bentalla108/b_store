@@ -11,6 +11,7 @@ class App extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
+      // themeMode: ThemeMode.light,
       theme: BAppTheme.lightTheme,
       darkTheme: BAppTheme.darkTheme,
       home: const Scaffold(
