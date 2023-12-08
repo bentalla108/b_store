@@ -10,13 +10,15 @@ class BCirularContainer extends StatelessWidget {
       this.width = 400,
       this.child,
       this.backgroundColor = BColors.textWhite,
-      this.padding = 0});
+      this.padding = 0,
+      this.margin});
 
   final double? height;
   final double? width;
   final double radius;
   final Color backgroundColor;
   final double padding;
+  final EdgeInsets? margin;
 
   final Widget? child;
 
@@ -26,6 +28,7 @@ class BCirularContainer extends StatelessWidget {
       height: height,
       width: width,
       padding: EdgeInsets.all(padding),
+      margin: margin,
       decoration: BoxDecoration(
           color: backgroundColor.withOpacity(0.1),
           borderRadius: BorderRadius.circular(radius)),

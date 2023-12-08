@@ -3,6 +3,8 @@ import 'package:b_store/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+/// Custom cart (panier)
+
 class BCartIconButton extends StatelessWidget {
   const BCartIconButton(
       {super.key,
