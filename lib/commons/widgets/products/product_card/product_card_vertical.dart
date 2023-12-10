@@ -103,7 +103,7 @@ class BProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
