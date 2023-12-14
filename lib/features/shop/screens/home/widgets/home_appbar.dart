@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../commons/widgets/appbar/appbart.dart';
+import '../../../../../commons/widgets/appbar/appbar.dart';
 import '../../../../../commons/widgets/products/custom_cart/custom_cart_button.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -34,7 +34,7 @@ class BHomeAppbar extends StatelessWidget {
       ),
       actions: [
         BCartIconButton(
-          cartCounter: '4',
+          cartCounterIon: '4',
           cartPressed: () {},
         )
       ],

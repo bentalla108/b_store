@@ -1,4 +1,5 @@
 import 'package:b_store/utils/constants/sizes.dart';
+import 'package:b_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
@@ -10,7 +11,7 @@ class BRoundedContainer extends StatelessWidget {
       this.width,
       this.child,
       this.backgroundColor = BColors.white,
-      this.borderColor = BColors.primary,
+      this.borderColor,
       this.padding,
       this.showBorder = false,
       this.radius = BSizes.cardRadiusLg,
@@ -20,7 +21,7 @@ class BRoundedContainer extends StatelessWidget {
   final double? width;
   final double radius;
   final Color backgroundColor;
-  final Color borderColor;
+  final Color? borderColor;
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
 
@@ -36,7 +37,13 @@ class BRoundedContainer extends StatelessWidget {
       padding: padding,
       margin: margin,
       decoration: BoxDecoration(
-          border: showBorder ? Border.all(color: borderColor) : null,
+          border: showBorder
+              ? Border.all(
+                  color: borderColor ??
+                      (BHelperFunctions.isDarkMode(context)
+                          ? BColors.dark
+                          : BColors.light))
+              : null,
           color: backgroundColor,
           borderRadius: BorderRadius.circular(radius)),
       child: child,

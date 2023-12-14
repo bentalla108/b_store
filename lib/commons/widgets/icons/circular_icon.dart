@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/sizes.dart';
 
-class BIconContainer extends StatelessWidget {
-  const BIconContainer({
+class BCircularIcon extends StatelessWidget {
+  const BCircularIcon({
     super.key,
     this.backgroundColor,
     this.color,

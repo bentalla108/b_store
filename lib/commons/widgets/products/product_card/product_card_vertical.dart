@@ -9,6 +9,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../styles/shadow.dart';
 import '../../container/rounded_container.dart';
 import '../../icons/circular_icon.dart';
+import '../../text/brand_title_with_icon.dart';
 import 'product_price_text.dart';
 import 'product_tittle.dart';
 
@@ -61,7 +62,7 @@ class BProductCardVertical extends StatelessWidget {
                       Positioned(
                         right: 9,
                         top: 0,
-                        child: BIconContainer(
+                        child: BCircularIcon(
                           icon: Iconsax.heart5,
                           color: Colors.red,
                           onPressed: () {},
@@ -78,28 +79,19 @@ class BProductCardVertical extends StatelessWidget {
             ),
 
             // Details
-            Padding(
-              padding: const EdgeInsets.only(left: BSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: BSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const BTextProductTitle(
+                  BTextProductTitle(
                     smallSize: true,
                     title: 'Adidas : ! Dummy text',
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: BSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text('Adidas',
-                          style: Theme.of(context).textTheme.labelMedium,
-                          maxLines: 1),
-                      const SizedBox(width: BSizes.xs),
-                      const Icon(Iconsax.verify5,
-                          color: BColors.primary, size: BSizes.iconXs),
-                    ],
-                  ),
+                  BBrandTitleWithVerifyIcon(title: 'Adidas'),
                 ],
               ),
             ),

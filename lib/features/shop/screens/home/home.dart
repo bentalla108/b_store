@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../../../commons/widgets/container/search_container.dart';
 import '../../../../commons/widgets/layout/grid_layout.dart';
 import '../../../../commons/widgets/products/product_card/product_card_vertical.dart';
+import '../../../../commons/widgets/space/spacer.dart';
 import '../../../../commons/widgets/text/custom_headline_text.dart';
 import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
@@ -54,6 +55,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                BSpaceBtwSectionH(),
               ],
             ),
           ),
@@ -86,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                   height: BSizes.spaceBtwItems,
                 ),
 
-                GridLayout(
+                BGridLayout(
                   itemBuilder: (_, index) => const BProductCardVertical(),
                   itemCount: 4,
                 )

@@ -10,13 +10,13 @@ class BCartIconButton extends StatelessWidget {
       {super.key,
       required this.cartPressed,
       this.icon = Iconsax.shopping_cart,
-      this.cartCounter,
+      this.cartCounterIon,
       this.iconColor = BColors.white});
 
   final VoidCallback cartPressed;
   final IconData icon;
   final Color iconColor;
-  final String? cartCounter;
+  final String? cartCounterIon;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +28,9 @@ class BCartIconButton extends StatelessWidget {
               icon,
               color: iconColor,
             )),
-        cartCounter != null
+        cartCounterIon != null
             ? CustomBadge(
-                text: cartCounter!,
+                text: cartCounterIon!,
               )
             : const SizedBox()
       ],
