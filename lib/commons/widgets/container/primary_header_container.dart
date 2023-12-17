@@ -22,12 +22,12 @@ class BPrimaryHeaderContainer extends StatelessWidget {
             const Positioned(
               top: -150,
               right: -250,
-              child: BCirularContainer(),
+              child: BCircularContainer(),
             ),
             const Positioned(
               top: 100,
               right: -300,
-              child: BCirularContainer(),
+              child: BCircularContainer(),
             ),
             child
           ],

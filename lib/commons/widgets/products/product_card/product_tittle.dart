@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BTextProductTitle extends StatelessWidget {
-  const BTextProductTitle({
+class BProductTitleText extends StatelessWidget {
+  const BProductTitleText({
     super.key,
     this.smallSize = false,
     this.textAlign = TextAlign.center,
@@ -23,7 +23,7 @@ class BTextProductTitle extends StatelessWidget {
           : Theme.of(context).textTheme.titleSmall,
       overflow: TextOverflow.ellipsis,
       maxLines: 2,
-      textAlign: TextAlign.center,
+      textAlign: textAlign,
     );
   }
 }

@@ -59,7 +59,7 @@ class StoreScreen extends StatelessWidget {
 
                               //! Features Breand
 
-                              BSectionHeadline(
+                              BSectionHeading(
                                 title: 'Features Breand',
                                 showActionButton: true,
                                 onPressed: () {},
@@ -72,7 +72,7 @@ class StoreScreen extends StatelessWidget {
                                   mainAxisExtent: 80,
                                   itemBuilder: (_, index) {
                                     return const BBrandCard(
-                                      showBorder: false,
+                                      showBorder: true,
                                       brandTitle: 'Nike',
                                       imageUrl: BImages.clothIcon,
                                     );

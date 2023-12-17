@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BSectionHeadline extends StatelessWidget {
-  const BSectionHeadline({
+class BSectionHeading extends StatelessWidget {
+  const BSectionHeading({
     super.key,
     required this.title,
     this.buttonTitle = 'View All',

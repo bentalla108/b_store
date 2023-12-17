@@ -34,7 +34,7 @@ class BCategoryTab extends StatelessWidget {
               ),
 
               const BSpaceBtwItemsH(),
-              BSectionHeadline(title: 'Your migh like', onPressed: () {}),
+              BSectionHeading(title: 'Your migh like', onPressed: () {}),
               const BSpaceBtwItemsH(),
 
               BGridLayout(

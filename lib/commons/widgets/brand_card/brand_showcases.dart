@@ -26,11 +26,13 @@ class BBrandshowCase extends StatelessWidget {
       child: Column(children: [
         //! Brand with count products
         const BBrandCard(
-          showBorder: true,
+          showBorder: false,
           brandTitle: 'Nike',
           imageUrl: BImages.clothIcon,
         ),
         //! Brand top 3 product image
+
+        // const BSpaceBtwItemsH(),
 
         Row(
           children: images

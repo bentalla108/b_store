@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.only(left: BSizes.defaultSpace),
                   child: Column(
                     children: [
-                      BSectionHeadline(
+                      BSectionHeading(
                         title: "Popular Categories",
                         showActionButton: false,
                       ),
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                 ),
 
                 //! -- Popular Products
-                const BSectionHeadline(
+                const BSectionHeading(
                   title: "Popular Products",
                   showActionButton: true,
                 ),

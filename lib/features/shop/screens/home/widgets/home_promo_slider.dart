@@ -43,7 +43,7 @@ class BPromoSlider extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 for (int i = 0; i < banner.length; i++)
-                  BCirularContainer(
+                  BCircularContainer(
                     width: 20,
                     height: 4,
                     backgroundColor: controller.caroussalCurrentIndex.value == i

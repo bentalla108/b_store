@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
 
-class BCirularContainer extends StatelessWidget {
-  const BCirularContainer(
+class BCircularContainer extends StatelessWidget {
+  const BCircularContainer(
       {super.key,
       this.radius = 400,
       this.height = 400,

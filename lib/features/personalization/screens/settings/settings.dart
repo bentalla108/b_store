@@ -1,8 +1,10 @@
 import 'package:b_store/commons/widgets/container/primary_header_container.dart';
 import 'package:b_store/commons/widgets/space/spacer.dart';
 import 'package:b_store/commons/widgets/text/custom_headline_text.dart';
+import 'package:b_store/features/personalization/screens/profile/profile.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../commons/widgets/appbar/appbar.dart';
@@ -38,7 +40,9 @@ class SettingsScreens extends StatelessWidget {
 
                 //! User Profile Card
 
-                const BUserProfileTileWidget(),
+                BUserProfileTileWidget(
+                  onPressed: () => Get.to(const ProfileScreen()),
+                ),
 
                 const BSpaceBtwSectionH(),
               ],
@@ -49,7 +53,7 @@ class SettingsScreens extends StatelessWidget {
               child: Column(
                 children: [
                   //! Account Setting
-                  const BSectionHeadline(
+                  const BSectionHeading(
                       title: 'Account Sectings', showActionButton: false),
                   const BSpaceBtwItemsH(),
                   BSettingMenuTile(
@@ -93,7 +97,7 @@ class SettingsScreens extends StatelessWidget {
 
                   //! App Setting
 
-                  const BSectionHeadline(
+                  const BSectionHeading(
                       title: 'App Sectings', showActionButton: false),
                   const BSpaceBtwItemsH(),
                   BSettingMenuTile(

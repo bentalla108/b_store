@@ -1,5 +1,7 @@
+import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/device/device_utility.dart';
+import 'package:b_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -22,6 +24,7 @@ class BAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = BHelperFunctions.isDarkMode(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: BSizes.md),
       child: AppBar(
@@ -31,7 +34,10 @@ class BAppbar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: const Icon(Iconsax.arrow_left),
+                icon: Icon(
+                  Iconsax.arrow_left,
+                  color: isDarkMode ? BColors.white : BColors.black,
+                ),
               )
             : leadingIcon != null
                 ? IconButton(
