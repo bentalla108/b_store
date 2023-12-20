@@ -7,11 +7,14 @@ import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 
 import '../../../../commons/widgets/appbar/tabbar.dart';
 import '../../../../commons/widgets/brand_card/brand_card.dart';
 import '../../../../commons/widgets/space/spacer.dart';
 import '../../../../utils/constants/image_strings.dart';
+import '../cart/cart.dart';
 import 'widgets/category_tab.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -29,7 +32,11 @@ class StoreScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             actions: [
-              BCartIconButton(cartPressed: () {}, cartCounterIon: '3'),
+              BCartIconButton(
+                cartPressed: () => Get.to(() => const CartScreen()),
+                cartCounterIon: '3',
+                iconColor: BColors.black,
+              ),
             ],
           ),
           body: NestedScrollView(

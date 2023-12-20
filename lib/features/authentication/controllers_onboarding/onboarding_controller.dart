@@ -3,6 +3,7 @@ import 'package:b_store/features/authentication/screen/onboarding_screen/content
 import 'package:b_store/features/authentication/screen/signup_screen/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
@@ -23,6 +24,9 @@ class OnBoardingController extends GetxController {
   // Update current index et jump to next page.
   void nextPage() {
     if (currentPageindex.value == numberPage - 1) {
+      final storage = GetStorage();
+      storage.write('isFirstime', false);
+
       Get.off(() => const LoginScreen());
     } else {
       pageController.jumpToPage(currentPageindex.value + 1);

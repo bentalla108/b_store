@@ -1,6 +1,8 @@
 import 'package:b_store/commons/widgets/space/spacer.dart';
+import 'package:b_store/features/shop/screens/products_reviews/product_reviews.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 import '../../../../commons/widgets/products/slider/product_detail_slider.dart';
@@ -80,9 +82,10 @@ class ProductDetail extends StatelessWidget {
                         showActionButton: false,
                       ),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () =>
+                              Get.to(() => const ProductsReviews()),
                           icon: const Icon(
-                            Iconsax.arrow_right3,
+                            Iconsax.arrow_right_3,
                             size: 18,
                           ))
                     ],

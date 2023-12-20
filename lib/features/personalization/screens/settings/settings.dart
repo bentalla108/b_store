@@ -1,6 +1,7 @@
 import 'package:b_store/commons/widgets/container/primary_header_container.dart';
 import 'package:b_store/commons/widgets/space/spacer.dart';
 import 'package:b_store/commons/widgets/text/custom_headline_text.dart';
+import 'package:b_store/features/personalization/screens/address/address.dart';
 import 'package:b_store/features/personalization/screens/profile/profile.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +59,7 @@ class SettingsScreens extends StatelessWidget {
                   const BSpaceBtwItemsH(),
                   BSettingMenuTile(
                       icon: Iconsax.safe_home,
-                      onTap: () {},
+                      onTap: () => Get.to(() => const UserAddressScreen()),
                       title: 'My Address',
                       subtitle: ' Set shopping delivery address'),
                   BSettingMenuTile(

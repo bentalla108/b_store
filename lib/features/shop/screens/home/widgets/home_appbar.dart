@@ -1,4 +1,6 @@
+import 'package:b_store/features/shop/screens/cart/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../commons/widgets/appbar/appbar.dart';
 import '../../../../../commons/widgets/products/custom_cart/custom_cart_button.dart';
@@ -34,9 +36,8 @@ class BHomeAppbar extends StatelessWidget {
       ),
       actions: [
         BCartIconButton(
-          cartCounterIon: '4',
-          cartPressed: () {},
-        )
+            cartCounterIon: '4',
+            cartPressed: () => Get.to(() => const CartScreen()))
       ],
     );
   }

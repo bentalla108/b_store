@@ -23,7 +23,7 @@ class WishListScreen extends StatelessWidget {
         actions: [
           BCircularIcon(
             icon: Iconsax.add,
-            onPressed: () => Get.to(const HomeScreen()),
+            onPressed: () => Get.to(() => const HomeScreen()),
           )
         ],
       ),
