@@ -1,7 +1,7 @@
 import 'package:b_store/commons/widgets/appbar/appbar.dart';
 import 'package:b_store/commons/widgets/layout/grid_layout.dart';
 import 'package:b_store/commons/widgets/products/product_card/product_card_vertical.dart';
-import 'package:b_store/features/shop/screens/home/home.dart';
+import 'package:b_store/navigation_menu.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,7 +23,7 @@ class WishListScreen extends StatelessWidget {
         actions: [
           BCircularIcon(
             icon: Iconsax.add,
-            onPressed: () => Get.to(() => const HomeScreen()),
+            onPressed: () => Get.offAll(() => const NavigationMenu()),
           )
         ],
       ),

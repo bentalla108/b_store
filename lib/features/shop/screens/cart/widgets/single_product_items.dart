@@ -9,8 +9,8 @@ import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 
-class BCardItem extends StatelessWidget {
-  const BCardItem({
+class SingleProductItem extends StatelessWidget {
+  const SingleProductItem({
     super.key,
   });
 

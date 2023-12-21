@@ -3,6 +3,7 @@ import 'package:b_store/commons/widgets/space/spacer.dart';
 import 'package:b_store/commons/widgets/text/custom_headline_text.dart';
 import 'package:b_store/features/personalization/screens/address/address.dart';
 import 'package:b_store/features/personalization/screens/profile/profile.dart';
+import 'package:b_store/features/shop/screens/orders/orders.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -69,7 +70,7 @@ class SettingsScreens extends StatelessWidget {
                       subtitle: 'Add , remove products and move to checkout'),
                   BSettingMenuTile(
                       icon: Iconsax.bag_tick,
-                      onTap: () {},
+                      onTap: () => Get.to(() => OrderScreen()),
                       title: 'My Order',
                       subtitle: ' In-process and completed orders'),
                   BSettingMenuTile(

@@ -8,7 +8,6 @@ import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 
 import '../../../../commons/widgets/appbar/tabbar.dart';
 import '../../../../commons/widgets/brand_card/brand_card.dart';

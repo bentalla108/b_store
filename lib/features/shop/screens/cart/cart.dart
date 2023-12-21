@@ -1,11 +1,10 @@
 import 'package:b_store/commons/widgets/appbar/appbar.dart';
-import 'package:b_store/commons/widgets/products/product_card/product_price_text.dart';
-import 'package:b_store/commons/widgets/space/spacer.dart';
+import 'package:b_store/features/shop/screens/checkout/checkout.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'widgets/cart_items.dart';
-import 'widgets/items_add_remove_to_cart.dart';
+import 'widgets/cart_item.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -19,35 +18,17 @@ class CartScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           showBackArrow: true),
-      body: Padding(
-        padding: const EdgeInsets.all(BSizes.defaultSpace),
-        child: ListView.separated(
-            shrinkWrap: true,
-            itemBuilder: (_, index) => const Column(
-                  children: [
-                    BCardItem(),
-                    BSpaceBtwItemsH(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(width: 70),
-                            ItemsAddRemoveToCart(),
-                          ],
-                        ),
-                        ProductPrice(price: '1500'),
-                      ],
-                    )
-                  ],
-                ),
-            separatorBuilder: (_, __) => const BSpaceBtwSectionH(),
-            itemCount: 10),
+      body: const Padding(
+        padding: EdgeInsets.all(BSizes.defaultSpace),
+        child: CartItems(
+          showAddRemoveButton: true,
+        ),
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(BSizes.defaultSpace),
         child: ElevatedButton(
-            onPressed: () {}, child: const Text('Checkout \$2500')),
+            onPressed: () => Get.to(() => const CheckoutScreen()),
+            child: const Text('Checkout \$2500')),
       ),
     );
   }
