@@ -3,6 +3,7 @@ import 'package:b_store/commons/widgets/container/search_container.dart';
 import 'package:b_store/commons/widgets/layout/grid_layout.dart';
 import 'package:b_store/commons/widgets/products/custom_cart/custom_cart_button.dart';
 import 'package:b_store/commons/widgets/text/custom_headline_text.dart';
+import 'package:b_store/features/shop/screens/brand/all_brand.dart';
 import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:b_store/utils/helpers/helper_functions.dart';
@@ -68,7 +69,8 @@ class StoreScreen extends StatelessWidget {
                               BSectionHeading(
                                 title: 'Features Breand',
                                 showActionButton: true,
-                                onPressed: () {},
+                                onPressed: () =>
+                                    Get.to(() => const AllBrandscreen()),
                               ),
 
                               const SizedBox(height: BSizes.spaceBtwItems / 2),

@@ -1,7 +1,9 @@
 import 'package:b_store/commons/widgets/container/primary_header_container.dart';
+import 'package:b_store/features/shop/screens/all_products/all_products.dart';
 import 'package:b_store/utils/constants/image_strings.dart';
 import 'package:b_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../commons/widgets/container/search_container.dart';
 import '../../../../commons/widgets/layout/grid_layout.dart';
@@ -79,9 +81,10 @@ class HomeScreen extends StatelessWidget {
                 ),
 
                 //! -- Popular Products
-                const BSectionHeading(
+                BSectionHeading(
                   title: "Popular Products",
                   showActionButton: true,
+                  onPressed: () => Get.to(() => const AllProducts()),
                 ),
 
                 const SizedBox(

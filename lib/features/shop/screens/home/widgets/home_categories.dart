@@ -1,4 +1,6 @@
+import 'package:b_store/features/shop/screens/sub_category/sub_category.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../commons/widgets/images/vertical_images_text.dart';
 import '../../../../../utils/constants/image_strings.dart';
@@ -21,8 +23,8 @@ class BHomeCategories extends StatelessWidget {
         itemBuilder: (_, index) {
           return BVerticalImageText(
             image: BImages.shoeIcon,
-            title: 'Shoes',
-            onTap: () {},
+            title: 'Shirt Sport',
+            onTap: () => Get.to(() => const SubCategoryScreen()),
           );
         },
       ),

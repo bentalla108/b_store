@@ -7,7 +7,7 @@ import 'package:iconsax/iconsax.dart';
 
 import 'features/shop/screens/home/home.dart';
 import 'features/shop/screens/store/strore.dart';
-import 'features/shop/wishlist/wishlist.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});

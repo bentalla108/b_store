@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../commons/widgets/icons/circular_icon.dart';
+import '../../../../commons/widgets/icons/circular_icon.dart';
 
 class WishListScreen extends StatelessWidget {
   const WishListScreen({super.key});
