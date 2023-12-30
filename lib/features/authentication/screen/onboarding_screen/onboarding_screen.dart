@@ -2,7 +2,7 @@ import 'package:b_store/features/authentication/screen/onboarding_screen/Widgets
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers_onboarding/onboarding_controller.dart';
+import '../../controllers/onboarding_controllers/onboarding_controller.dart';
 import 'Widgets/onboarding_next_button.dart';
 import 'Widgets/onboarding_dotposition.dart';
 import 'Widgets/onboarding_skip.dart';

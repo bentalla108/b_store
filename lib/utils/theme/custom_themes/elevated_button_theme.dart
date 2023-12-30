@@ -1,3 +1,4 @@
+import 'package:b_store/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class BElevatedButtonTheme {
@@ -7,7 +8,7 @@ class BElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
+      backgroundColor: BColors.primary,
       disabledBackgroundColor: Colors.grey,
       disabledForegroundColor: Colors.grey,
       side: const BorderSide(

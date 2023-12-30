@@ -1,9 +1,8 @@
+import 'package:b_store/blindings/general_binding.dart';
 import 'package:b_store/utils/constants/colors.dart';
 import 'package:b_store/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-
-import 'features/authentication/screen/onboarding_screen/onboarding_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -16,9 +15,16 @@ class App extends StatelessWidget {
       // themeMode: ThemeMode.light,
       theme: BAppTheme.lightTheme,
       darkTheme: BAppTheme.darkTheme,
+      initialBinding: GeneralBindings(),
       home: const Scaffold(
         backgroundColor: BColors.primaryBackground,
-        body: OnBoardingScreen(),
+        body: Scaffold(
+            backgroundColor: BColors.primary,
+            body: Center(
+              child: CircularProgressIndicator(
+                color: Colors.white,
+              ),
+            )),
       ),
     );
   }

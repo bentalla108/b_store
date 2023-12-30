@@ -1,4 +1,4 @@
-import 'package:b_store/features/authentication/controllers_onboarding/onboarding_controller.dart';
+import 'package:b_store/features/authentication/controllers/onboarding_controllers/onboarding_controller.dart';
 import 'package:b_store/features/authentication/screen/password_configuration/forgot_password_screen.dart';
 import 'package:b_store/navigation_menu.dart';
 import 'package:b_store/utils/constants/sizes.dart';
