@@ -23,9 +23,11 @@ class BFullScreenLoader {
                   const SizedBox(
                     height: 250,
                   ),
-                  BAnimationLoader(
-                    text: text,
-                    animation: animation,
+                  Expanded(
+                    child: BAnimationLoader(
+                      text: text,
+                      animation: animation,
+                    ),
                   ),
                 ],
               ),

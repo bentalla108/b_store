@@ -257,4 +257,10 @@ class BImages {
   static const String paytm = "assets/icons/payment_methods/paytm.png";
   static const String successfulPaymentIcon =
       "assets/icons/payment_methods/successful_payment_icon.png";
+
+// -- Lottie file
+
+  static const String processing = "assets/images/animations/processing.json";
+  static const String userCreatedSuccessfully =
+      "assets/images/user_created_successfully.json";
 }

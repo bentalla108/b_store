@@ -70,7 +70,7 @@ class SettingsScreens extends StatelessWidget {
                       subtitle: 'Add , remove products and move to checkout'),
                   BSettingMenuTile(
                       icon: Iconsax.bag_tick,
-                      onTap: () => Get.to(() => OrderScreen()),
+                      onTap: () => Get.to(() => const OrderScreen()),
                       title: 'My Order',
                       subtitle: ' In-process and completed orders'),
                   BSettingMenuTile(

@@ -28,8 +28,8 @@ class BSignUpForm extends StatelessWidget {
                   child: CustomTextField(
                 validator: (value) =>
                     BValidator.validateEmptyText('First Name', value),
-                controller: controller.username,
-                labelText: BTexts.username,
+                controller: controller.firstName,
+                labelText: BTexts.firstName,
                 prefixIconName: Iconsax.user,
               )),
               const SizedBox(
@@ -45,6 +45,16 @@ class BSignUpForm extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          const SizedBox(
+            height: BSizes.spaceBtwItems,
+          ),
+          CustomTextField(
+            validator: (value) =>
+                BValidator.validateEmptyText('Username', value),
+            controller: controller.username,
+            labelText: BTexts.username,
+            prefixIconName: Iconsax.user,
           ),
           const SizedBox(
             height: BSizes.spaceBtwItems,

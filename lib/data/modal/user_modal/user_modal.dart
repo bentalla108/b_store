@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+
 import 'dart:convert';
 
 import 'package:b_store/utils/formatters/formatter.dart';
@@ -21,9 +22,8 @@ class UserModal {
       required this.phoneNumber,
       required this.profilePicture});
 
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return <String, dynamic>{
-      'id': id,
       'firstName': firstName,
       'lastName': lastName,
       'username': username,
@@ -33,7 +33,9 @@ class UserModal {
     };
   }
 
-  String toJson() => json.encode(toMap());
+  // Firebase take a map no need to encode to json
+
+  toJsonString() => json.encode(toJson());
 
   /// Factory method to create user from firebase
 
